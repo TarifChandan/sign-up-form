@@ -35,17 +35,16 @@
 
       <div class="right-column">
         <section class="contact-intro">
-          <h1>Get in Touch with Your Local Root</h1>
-          <p>
-            Have a question about our produce, your order, or one of our partner
-            farms? We're all ears and here to help. Reach out—we'd love to hear
-            from you.
-          </p>
+          <h1>
+            Get in Touch with <br />
+            Your Local Root
+          </h1>
+          <!-- <p>We’re all ears and here to help with any questions you have.</p> -->
         </section>
         <section class="contact-form">
           <form action="#" method="get">
             <h2>Let's do this!</h2>
-            <section class="contact-fields">
+            <section class="form-fields">
               <div>
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first-name" />
@@ -63,20 +62,21 @@
                 <input type="tel" id="phone-number" name="phone-number" />
               </div>
               <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" required />
               </div>
               <div>
-                <label for="confirm-password">Confirm Password</label>
+                <label for="confirm-password">Confirm Password *</label>
                 <input
                   type="password"
                   id="confirm-password"
                   name="confirm-password"
+                  required
                 />
               </div>
             </section>
             <section class="form-actions">
-              <button>Create Account</button>
+              <button type="submit">Create Account</button>
               <p>Already have an account? <a href="#">Log in</a></p>
             </section>
           </form>

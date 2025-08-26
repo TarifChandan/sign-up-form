@@ -77,3 +77,161 @@ img {
 .logo-text {
   font-family: "Fascinate", sans-serif;
 }
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT COLUMN */
+.left-column {
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+  flex-basis: 30%;
+  text-align: center;
+  padding-bottom: 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-container {
+  background-color: rgb(0 0 0 / 0.5);
+  display: flex;
+  column-gap: 0.6em;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.photo-credit {
+  padding: 0.4em;
+  font-size: 0.8rem;
+}
+
+.photo-credit,
+.photo-credit a {
+  color: #fff;
+}
+
+/* RIGHT COLUMN */
+.right-column {
+  flex-basis: 70%;
+  background-color: #b6fe61;
+}
+
+.contact-intro {
+  padding: 2.5em;
+  background: #004f34;
+  color: #b6fe61;
+}
+
+.contact-intro h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.contact-intro p {
+  margin-top: 1.5em;
+  max-width: 450px;
+}
+
+.contact-form {
+  padding-top: 1.8em;
+  background: #f0fff1;
+}
+
+.contact-form h2 {
+  color: #181f0d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 40px;
+}
+
+.form-fields {
+  position: relative;
+  box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+  display: flex;
+  column-gap: 4.5em;
+  row-gap: 1.4em;
+  flex-wrap: wrap;
+  padding: 0 2.5em 2.5em;
+}
+
+.form-fields div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.form-fields div label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.4em;
+}
+
+.form-fields div input {
+  border: 1px solid #ccc;
+  padding: 0.4em 0.5em;
+  background: #f0fff1;
+  border-radius: 3px;
+}
+
+.form-actions {
+  padding: 2.3em 2.5em 0;
+  background-color: #b6fe61;
+}
+
+.form-actions button {
+  background: #427d02;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6em 2.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background: #283618;
+}
+
+.form-actions p {
+  margin-top: 1.5em;
+}
+
+.form-actions p a {
+  color: #181f0d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-actions p a:hover {
+  text-decoration: underline;
+}
+
+/* INPUT STATES */
+.form-fields div input:focus {
+  outline: none;
+  box-shadow: 2px 3px 5px rgb(0 0 0 / 0.2);
+  border: 2px solid #004f34;
+}
+
+.form-fields div input:invalid {
+  border: 1px solid red;
+}
